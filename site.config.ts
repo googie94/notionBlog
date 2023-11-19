@@ -50,6 +50,7 @@ export default siteConfig({
   // }
   pageUrlOverrides: {
     '/agreement': '3f4e17a0f36f4dde8c803b5b01628eca',
+    '/guideline': '6cebf9e7c2824b98aaa569f0a74c3afa'
   },
 
   // whether to use the default notion navigation style or a custom one with links to
