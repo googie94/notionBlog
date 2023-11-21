@@ -171,7 +171,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isLiteMode = lite === 'true'
 
   let { isDarkMode } = useDarkMode()
-  isDarkMode = false
 
   const siteMapPageUrl = React.useMemo(() => {
     const params: any = {}
@@ -238,7 +237,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       />
 
       {isLiteMode && <BodyClassName className='notion-lite' />}
-      {isDarkMode && <BodyClassName className='light-mode' />}
+      {isDarkMode && <BodyClassName className='dark-mode' />}
 
       <NotionRenderer
         bodyClassName={cs(
