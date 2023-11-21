@@ -4,7 +4,8 @@ export function useDarkMode() {
   const darkMode = useDarkModeImpl(false, { classNameDark: 'dark-mode' })
 
   return {
-    isDarkMode: darkMode.value,
+    // isDarkMode: darkMode.value,
+    isDarkMode: false,
     toggleDarkMode: darkMode.toggle
   }
 }
