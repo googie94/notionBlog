@@ -24,7 +24,7 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9b8f3c4d-4be8-4489-a104-0b8a50894b10%2F8ccd2f2d-ada5-41fa-ae75-7d5ed45fd438%2Frobot.svg?table=block&id=f3bfc392-bf8a-40d1-813f-a574355a6d80&spaceId=9b8f3c4d-4be8-4489-a104-0b8a50894b10&userId=06ffb81e-1596-4870-afa8-e0fab28c3cf1&cache=v2',
+  defaultPageIcon: null,
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
@@ -44,10 +44,10 @@ export default siteConfig({
   //   '/foo': '067dd719a912471ea9a3ac10710e7fdf',
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
-  pageUrlOverrides: {
-    '/agreement': '3f4e17a0f36f4dde8c803b5b01628eca',
-    '/guideline': '6cebf9e7c2824b98aaa569f0a74c3afa'
-  },
+  // pageUrlOverrides: {
+  //  '/agreement': '3f4e17a0f36f4dde8c803b5b01628eca',
+  //  '/guideline': '6cebf9e7c2824b98aaa569f0a74c3afa'
+  // },
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
