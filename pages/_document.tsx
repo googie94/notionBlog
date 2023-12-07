@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
             <link rel='manifest' href='/manifest.json' />
             <link href="/fonts/SpoqaHanSansNeo/index.css" rel="stylesheet" />
           </Head>
-
+          <meta name="google-site-verification" content="D3mOKcbLBiTjxDtqaUoTHF5wedc1i5y2gcBAP7vkCmE" />
           <body>
             <script
               dangerouslySetInnerHTML={{
