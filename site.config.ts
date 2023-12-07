@@ -2,10 +2,10 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: 'f3bfc392bf8a40d1813fa574355a6d80',
+  rootNotionPageId: '9833bba41cde4e09b9051074d43804cc',
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: '9b8f3c4d-4be8-4489-a104-0b8a50894b10',
+  rootNotionSpaceId: '7d501a96-57dd-4eac-84d0-6bdc5a73b349',
   // basic site info (required)
   name: "googie's tech blog",
   domain: 'tech.googieyu.com',
