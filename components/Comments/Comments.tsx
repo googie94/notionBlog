@@ -8,11 +8,11 @@ import ko from 'date-fns/locale/ko';
 import { useFormik } from 'formik';
 import useSWR from 'swr';
 
-import { ExtendedRecordMap } from '~/packages/notion-types';
+// import { ExtendedRecordMap } from '~/packages/notion-types';
 
 interface CommentsProps {
   pageId: string;
-  recordMap: ExtendedRecordMap;
+  recordMap: Record<string, any>;
 }
 
 const fetcher = url => axios.get(url).then(res => res.data);
@@ -42,10 +42,18 @@ const Comments = ({ pageId, recordMap }: CommentsProps) => {
     },
   });
 
-  Object.entries(recordMap.comment || {}).forEach(([commentId, commentData]) => {
+  interface CommentData {
+    value: {
+      created_by_table: string;
+      created_by_id: string;
+    };
+  }
+
+  Object.entries(recordMap.comment || {}).forEach(([, commentData]) => {
+    const comment = commentData as CommentData;
     // created_by_table이 notion_user인 경우
-    if (commentData.value.created_by_table === 'notion_user') {
-      const createdByUserId = commentData.value.created_by_id;
+    if (comment.value.created_by_table === 'notion_user') {
+      const createdByUserId = comment.value.created_by_id;
 
       // 해당 사용자의 정보가 notion_user 객체에 없는 경우 추가
       if (!recordMap.notion_user[createdByUserId]) {
