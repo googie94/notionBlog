@@ -15,11 +15,7 @@ interface CommentsProps {
   recordMap: Record<string, any>;
 }
 
-const config = {
-  "Authorization": `Bearer ${process.env.NOTION_API_KEY}`,
-  "Notion-Version": "2022-06-28",
-}
-const fetcher = url => axios.get(url, config).then(res => res.data);
+const fetcher = url => axios.get(url).then(res => res.data);
 const Comments = ({ pageId, recordMap }: CommentsProps) => {
   const [loading, setLoading] = useState(false);
   const { data, mutate } = useSWR(`/api/comments/${pageId}`, fetcher);
