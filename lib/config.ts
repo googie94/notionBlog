@@ -219,3 +219,5 @@ function invertPageUrlOverrides(
     }
   }, {})
 }
+
+export const enableComment: boolean = getSiteConfig('enableComment', false);
