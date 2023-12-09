@@ -7,12 +7,12 @@ export default siteConfig({
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: '7d501a96-57dd-4eac-84d0-6bdc5a73b349',
   // basic site info (required)
-  name: "googie's tech blog",
-  domain: 'tech.googieyu.com',
+  name: "googie's blog",
+  domain: 'googieyu.com',
   author: 'googie',
 
   // open graph metadata (optional)
-  description: "Notion-based blog",
+  description: "googie yu, who is a Developer based in Ansan, South Korea. | '유승국' 개발자입니다.",
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
