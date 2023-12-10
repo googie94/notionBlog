@@ -18,7 +18,8 @@ export const PageHead: React.FC<
   title = title ?? site?.name
   description = description ?? site?.description
 
-  const socialImageUrl = getSocialImageUrl(pageId) || image
+  // const socialImageUrl = getSocialImageUrl(pageId) || image
+  const socialImageUrl = image
 
   return (
     <Head>
@@ -54,37 +55,28 @@ export const PageHead: React.FC<
       {site && (
         <>
           <meta property='og:site_name' content={site.name} />
-          <meta property='twitter:domain' content={site.domain} />
         </>
-      )}
-
-      {config.twitter && (
-        <meta name='twitter:creator' content={`@${config.twitter}`} />
       )}
 
       {description && (
         <>
           <meta name='description' content={description} />
           <meta property='og:description' content={description} />
-          <meta name='twitter:description' content={description} />
         </>
       )}
 
-      {socialImageUrl ? (
+      {socialImageUrl && (
         <>
-          <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:image' content={socialImageUrl} />
           <meta property='og:image' content={socialImageUrl} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
         </>
-      ) : (
-        <meta name='twitter:card' content='summary' />
       )}
 
       {url && (
         <>
           <link rel='canonical' href={url} />
           <meta property='og:url' content={url} />
-          <meta property='twitter:url' content={url} />
         </>
       )}
 
@@ -96,7 +88,6 @@ export const PageHead: React.FC<
       />
 
       <meta property='og:title' content={title} />
-      <meta name='twitter:title' content={title} />
       <title>{title}</title>
     </Head>
   )
