@@ -61,7 +61,7 @@ const createSitemap = (siteMap: SiteMap) => {
               <loc>${host}/${canonicalPagePath}</loc>
               <changefreq>weekly</changefreq>
               <priority>0.5</priority>
-              <lastmod>${siteMap.canonicalPageMap}</lastmod>
+              <lastmod>${lastmod}</lastmod>
             </url>
           `.trim()
         )
