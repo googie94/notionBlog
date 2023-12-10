@@ -68,8 +68,6 @@ export const PageHead: React.FC<
       {socialImageUrl && (
         <>
           <meta property='og:image' content={socialImageUrl} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
         </>
       )}
 
