@@ -23,7 +23,7 @@ module.exports = withBundleAnalyzer({
     return [
       {
         source: '/project/plaber-of-the-match',
-        destination: '/7937cecfe961441286d6313fd3967b6f',
+        destination: '/플래버-오브-더-매치',
         permanent: true,
       },
       // You can add more redirects here
