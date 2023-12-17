@@ -40,9 +40,9 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  pageUrlOverrides: {
-   '/project/plaber-of-the-match': '7937cecfe961441286d6313fd3967b6f'
-  },
+  // pageUrlOverrides: {
+  //  'project/plaber-of-the-match': '7937cecfe961441286d6313fd3967b6f'
+  // },
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages

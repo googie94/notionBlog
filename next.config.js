@@ -18,5 +18,15 @@ module.exports = withBundleAnalyzer({
     formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/project/plaber-of-the-match',
+        destination: '/7937cecfe961441286d6313fd3967b6f',
+        permanent: true,
+      },
+      // You can add more redirects here
+    ];
+  },
 })
