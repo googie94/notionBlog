@@ -187,7 +187,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   // const isRootPage =
   //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const isBlogPost =
-    block?.type === 'page' && block?.parent_table === 'collection' && !(block?.properties?.title[0][0] === "post" || block?.properties?.title[0][0] === "project" || block?.properties?.title[0][0] === "write" || block?.properties?.title[0][0] === "serise")
+    block?.type === 'page' && block?.parent_table === 'collection' && !(block?.properties?.title[0][0] === "post" || block?.properties?.title[0][0] === "project" || block?.properties?.title[0][0] === "write" || block?.properties?.title[0][0] === "series" || block?.properties?.title[0][0] === "WIL")
 
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
